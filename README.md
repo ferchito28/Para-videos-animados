@@ -20,6 +20,20 @@ Instala:
 | Playwright + Chromium | Renderiza la escena frame a frame (headless) |
 | Fuentes Luckiest Guy / Bangers / Montserrat | Subtítulos estilo caricatura |
 
+## Hacer un video
+
+1. Crea `proyectos/<nombre>/` con `voz.mp3` (tu voz en off) y `guion.txt`.
+2. Escribe `escenas.json` (formato en [docs/ESCENAS.md](docs/ESCENAS.md); ejemplo en `proyectos/gatos-de-barco/`).
+3. Revisa y renderiza:
+
+```bash
+node tools/render.mjs proyectos/<nombre> --fotos     # una imagen por escena
+node tools/render.mjs proyectos/<nombre> --preview   # video rápido
+node tools/render.mjs proyectos/<nombre>             # final → output/<nombre>/video.mp4
+```
+
+Para probar sin voz real: `python3 tools/voz_prueba.py proyectos/<nombre>` genera `voz.wav` con Kokoro.
+
 ## Prueba rápida
 
 ```bash

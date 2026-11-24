@@ -2,3 +2,5 @@ node_modules/
 models/
 output/
 __pycache__/
+proyectos/*/voz.*
+proyectos/*/palabras.json

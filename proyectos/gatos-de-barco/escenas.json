@@ -1,0 +1,192 @@
+{
+  "titulo": "Por qué los barcos llevaban gatos",
+  "subtitulos": { "palabras": 3 },
+  "escenas": [
+    {
+      "set": "barco",
+      "camara": { "tipo": "plano" },
+      "personajes": [
+        { "id": "marinero", "tipo": "marinero", "pos": [-1.4, 0.3], "accion": "quieto" },
+        { "id": "capitan", "tipo": "capitan", "pos": [1.3, 0], "accion": "hablar", "mira": "izquierda" }
+      ],
+      "props": [{ "tipo": "barril", "pos": [-3, -1.5] }, { "tipo": "caja", "pos": [3.2, -1.2] }]
+    },
+    {
+      "desde": "No era el capitán",
+      "set": "barco",
+      "camara": { "tipo": "detalle", "objetivo": "capitan" },
+      "personajes": [{ "id": "capitan", "tipo": "capitan", "pos": [0, 0], "accion": "enojado", "cara": "enojado" }]
+    },
+    {
+      "desde": "No era el cocinero",
+      "set": "barco",
+      "camara": { "tipo": "detalle", "objetivo": "chef" },
+      "personajes": [{ "id": "chef", "tipo": "chef", "pos": [0, 0], "objeto": "cuchara", "accion": "triste" }]
+    },
+    {
+      "desde": "Era un gato",
+      "set": "barco",
+      "transicion": "flash",
+      "camara": { "tipo": "detalle", "objetivo": "gato", "distancia": 2.6, "altura": 0.2 },
+      "personajes": [{ "id": "gato", "tipo": "gato", "pos": [0, 0.5], "accion": "sorpresa" }]
+    },
+    {
+      "desde": "Y no estaba ahí",
+      "set": "barco",
+      "camara": { "tipo": "seguir", "objetivo": "gato", "distancia": 4.5, "altura": 0.6 },
+      "personajes": [{ "id": "gato", "tipo": "gato", "pos": [-2.5, 0.5], "accion": "caminar", "a": [2, 0.5] }],
+      "props": [{ "tipo": "barril", "pos": [0, -1.4] }, { "tipo": "ancla", "pos": [2.5, -1.8] }]
+    },
+    {
+      "desde": "Verás",
+      "set": "tunel",
+      "camara": { "tipo": "acercar" },
+      "personajes": [
+        { "id": "r1", "tipo": "rata", "pos": [-1.2, 0.4], "accion": "quieto", "escala": 1.4 },
+        { "id": "r2", "tipo": "rata", "pos": [0.6, 0.9], "accion": "quieto", "mira": "izquierda", "escala": 1.4 },
+        { "id": "r3", "tipo": "rata", "pos": [1.5, -0.2], "accion": "quieto", "escala": 1.2 }
+      ],
+      "props": [{ "tipo": "barril", "pos": [-2.2, -1] }, { "tipo": "caja", "pos": [2.3, -1.2] }, { "tipo": "lampara", "pos": [0.2, -1.4], "y": 0.8 }],
+      "rotulo": { "texto": "¡RATAS!", "desde": "las ratas" }
+    },
+    {
+      "desde": "Se comían la comida",
+      "set": "tunel",
+      "camara": { "tipo": "orbita", "distancia": 5.5 },
+      "personajes": [
+        { "id": "r1", "tipo": "rata", "pos": [-1.8, 0.4], "accion": "correr", "a": [1.8, 0.4], "escala": 1.4 },
+        { "id": "r2", "tipo": "rata", "pos": [1.5, 1.0], "accion": "correr", "a": [-1.5, 1.0], "escala": 1.3 }
+      ],
+      "props": [{ "tipo": "saco", "pos": [0, -0.8], "texto": "🌾" }, { "tipo": "barril", "pos": [-2, -1.2] }]
+    },
+    {
+      "desde": "Y peor aún",
+      "set": "barco",
+      "setOpts": { "tormenta": true },
+      "camara": { "tipo": "acercar", "objetivo": "marinero" },
+      "personajes": [{ "id": "marinero", "tipo": "marinero", "pos": [0, 0], "accion": "triste" }]
+    },
+    {
+      "desde": "Así que los marineros",
+      "set": "barco",
+      "camara": { "tipo": "seguir", "objetivo": "gato", "distancia": 5, "altura": 0.5 },
+      "transicion": "flash",
+      "personajes": [
+        { "id": "rata", "tipo": "rata", "pos": [-1.2, 0.6], "accion": "correr", "a": [4, 0.6], "escala": 1.3 },
+        { "id": "gato", "tipo": "gato", "pos": [-3, 0.6], "accion": "correr", "a": [2.6, 0.6] }
+      ],
+      "rotulo": { "texto": "EL MEJOR CAZADOR", "desde": "cazador" }
+    },
+    {
+      "desde": "Un solo gato",
+      "set": "barco",
+      "camara": { "tipo": "frente" },
+      "personajes": [
+        { "id": "marinero", "tipo": "marinero", "pos": [-1, 0], "accion": "celebrar" },
+        { "id": "gato", "tipo": "gato", "pos": [0.9, 0.4], "accion": "quieto", "mira": "izquierda" }
+      ],
+      "props": [{ "tipo": "barril", "pos": [2.2, -1] }, { "tipo": "caja", "pos": [-2.6, -1] }, { "tipo": "saco", "pos": [1.6, -1.4] }]
+    },
+    {
+      "desde": "Por eso los trataban",
+      "set": "castillo",
+      "camara": { "tipo": "acercar", "objetivo": "gato" },
+      "personajes": [
+        { "id": "gato", "tipo": "gato", "pos": [0, -1.5], "accion": "quieto", "escala": 1.3 },
+        { "id": "marinero", "tipo": "marinero", "pos": [-1.8, 0.4], "accion": "saludar" }
+      ],
+      "props": [{ "tipo": "monedas", "pos": [1.5, -0.6] }, { "tipo": "libros", "pos": [2.2, -1.5], "anim": "aparecer", "retraso": 2.5 }],
+      "rotulo": { "texto": "COMO REYES" }
+    },
+    {
+      "desde": "La Marina Real",
+      "set": "barco",
+      "camara": { "tipo": "plano" },
+      "personajes": [
+        { "id": "capitan", "tipo": "capitan", "pos": [-0.8, 0], "accion": "senalar" },
+        { "id": "gato", "tipo": "gato", "pos": [1.0, 0.4], "accion": "quieto", "mira": "izquierda" }
+      ],
+      "props": [{ "tipo": "letrero", "texto": "ROYAL NAVY", "pos": [0, -2.2], "y": 2.8 }],
+      "rotulo": { "texto": "1975", "subtitulo": "fin de los gatos a bordo", "desde": "hasta" }
+    },
+    {
+      "desde": "Pero el más famoso",
+      "set": "estudio",
+      "setOpts": { "color": "#2b4c7e" },
+      "camara": { "tipo": "acercar", "objetivo": "sam", "distancia": 3.2, "altura": 0.3 },
+      "personajes": [{ "id": "sam", "tipo": "gato", "color": "#2b2b2b", "pos": [0, 0], "accion": "quieto" }],
+      "rotulo": { "texto": "SAM", "desde": "llamado Sam" }
+    },
+    {
+      "desde": "En la Segunda Guerra",
+      "set": "barco",
+      "setOpts": { "tormenta": true, "hundir": true },
+      "camara": { "tipo": "frente", "sacudir": 1, "inclinar": 6 },
+      "personajes": [
+        { "id": "marinero", "tipo": "marinero", "pos": [-0.9, 0], "accion": "asustado" },
+        { "id": "sam", "tipo": "gato", "color": "#2b2b2b", "pos": [0.9, 0.5], "accion": "sorpresa" }
+      ],
+      "rotulo": { "texto": "BARCO 1", "desde": "se hundió" }
+    },
+    {
+      "desde": "Lo rescataron",
+      "set": "barco",
+      "camara": { "tipo": "acercar" },
+      "personajes": [
+        { "id": "marinero2", "tipo": "marinero", "camisa": "marinero", "pos": [-0.8, 0], "accion": "cargar" },
+        { "id": "sam", "tipo": "gato", "color": "#2b2b2b", "pos": [0.6, 0.5], "accion": "quieto", "mira": "izquierda" }
+      ]
+    },
+    {
+      "desde": "y también se hundió",
+      "set": "barco",
+      "setOpts": { "tormenta": true, "hundir": true },
+      "transicion": "flash",
+      "camara": { "tipo": "orbita", "sacudir": 1.3, "inclinar": -8 },
+      "personajes": [{ "id": "sam", "tipo": "gato", "color": "#2b2b2b", "pos": [0, 0.5], "accion": "sorpresa" }],
+      "rotulo": "BARCO 2"
+    },
+    {
+      "desde": "Lo pasaron a un tercero",
+      "set": "barco",
+      "camara": { "tipo": "detalle", "objetivo": "capitan" },
+      "personajes": [
+        { "id": "capitan", "tipo": "capitan", "pos": [-0.4, 0], "accion": "pensar" },
+        { "id": "sam", "tipo": "gato", "color": "#2b2b2b", "pos": [0.8, 0.6], "accion": "quieto", "mira": "izquierda" }
+      ]
+    },
+    {
+      "desde": "También se hundió",
+      "set": "barco",
+      "setOpts": { "tormenta": true, "hundir": true },
+      "transicion": "flash",
+      "camara": { "tipo": "alejar", "sacudir": 1.6, "inclinar": 10 },
+      "personajes": [
+        { "id": "capitan", "tipo": "capitan", "pos": [-0.8, 0], "accion": "asustado" },
+        { "id": "sam", "tipo": "gato", "color": "#2b2b2b", "pos": [0.8, 0.5], "accion": "sorpresa" }
+      ],
+      "rotulo": "BARCO 3"
+    },
+    {
+      "desde": "Y Sam sobrevivió",
+      "set": "estudio",
+      "setOpts": { "color": "#f4c38a" },
+      "camara": { "tipo": "frente" },
+      "personajes": [
+        { "id": "m1", "tipo": "marinero", "pos": [-1.3, -0.3], "accion": "celebrar" },
+        { "id": "sam", "tipo": "gato", "color": "#2b2b2b", "pos": [0, 0.6], "accion": "sorpresa" },
+        { "id": "c1", "tipo": "capitan", "pos": [1.3, -0.3], "accion": "celebrar", "mira": "izquierda" }
+      ],
+      "rotulo": { "texto": "3 DE 3", "subtitulo": "¡sobrevivió!" }
+    },
+    {
+      "desde": "Desde entonces",
+      "set": "estudio",
+      "setOpts": { "color": "#e9b949" },
+      "camara": { "tipo": "acercar", "objetivo": "sam", "distancia": 3.4, "altura": 0.3 },
+      "personajes": [{ "id": "sam", "tipo": "gato", "color": "#2b2b2b", "pos": [0, 0], "accion": "quieto", "escala": 1.2 }],
+      "props": [{ "tipo": "ancla", "pos": [-1.1, -0.8], "anim": "aparecer" }],
+      "rotulo": { "texto": "SAM", "subtitulo": "EL INSUMERGIBLE", "desde": "lo llamaron" }
+    }
+  ]
+}
