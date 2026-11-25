@@ -1,0 +1,27 @@
+{
+  "name": "para-videos-animados",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferchito28/Para-videos-animados.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferchito28/Para-videos-animados/issues"
+  },
+  "homepage": "https://github.com/ferchito28/Para-videos-animados#readme",
+  "dependencies": {
+    "@fontsource/bangers": "^5.3.0",
+    "@fontsource/luckiest-guy": "^5.3.0",
+    "@fontsource/montserrat": "^5.3.0",
+    "three": "^0.170.0"
+  }
+}
